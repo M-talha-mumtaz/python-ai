@@ -1,0 +1,1 @@
+print("Welcome to Muhammad Talha Mumtaz's Python for AI project!")
