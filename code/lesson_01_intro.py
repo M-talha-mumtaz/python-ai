@@ -1,7 +1,7 @@
 name = "Muhammad Talha Mumtaz"
 dream_role = "AI Engineer"
-business_problem = "A bakery answers the same customer questions every day"
-reason = "I want to help small businesses save time"
+business_problem = "An online shop manually sorts customer messages about orders, returns, and products"
+reason = "I want to build AI tools that organize customer requests and help staff respond faster"
 
 print(f"Name: {name}")
 print(f"Dream AI role: {dream_role}")
