@@ -35,3 +35,17 @@ clear instructions for AI.
 | Delivery | delivery, shipping | Delivery normally takes 2–5 working days. |
 | Payment | payment, pay | We accept bank transfers and cash on delivery both. |
 | Returns | return | Contact support to check return eligibility. |
+
+
+## Module 1 Final Project: AI Front Desk
+
+A Python front desk for Talha Stationery that answers FAQs,
+calculates quotes with discounts and delivery, and prepares
+AI prompts for unanswered questions.
+
+Business details and prices are examples.
+
+### Run
+
+```powershell
+uv run code/project_m1_front_desk.py
