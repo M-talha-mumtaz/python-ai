@@ -49,3 +49,20 @@ Business details and prices are examples.
 
 ```powershell
 uv run code/project_m1_front_desk.py
+
+
+
+
+
+## Module 2 Checkpoint 1: AI Content Studio
+
+A local AI studio for Talha Stationery that writes product descriptions,
+streams social posts, looks up exact prices, and answers customer questions
+using the shop's facts.
+
+**Run:** `uv run code/project_m2_content_studio.py`
+
+![AI Content Studio session](docs/project-m2-cp1-run.png)
+
+This could save the owner time by preparing product and social content
+and answering common questions from one tool.
