@@ -11,3 +11,4 @@ wheels/
 
 chat_history.json
 errors.log
+orders.json
