@@ -23,3 +23,15 @@ uv run code/project_m1_prompt_kit.py
 
 Potential customers: small business owners who need help writing
 clear instructions for AI.
+
+
+## Task 1.8: Business Helper Bot
+
+| Intent | Keywords | Reply |
+|---|---|---|
+| Complaint | refund, complaint, order is late | Please contact our support team for help. |
+| Greeting | hi, hello | Welcome! How can I help? |
+| Opening hours | hours, timings | Support is available 24/7. |
+| Delivery | delivery, shipping | Delivery normally takes 2–5 working days. |
+| Payment | payment, pay | We accept bank transfers and cash on delivery both. |
+| Returns | return | Contact support to check return eligibility. |
