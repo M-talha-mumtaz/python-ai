@@ -1,0 +1,13 @@
+{
+  "business_name": "Talha Stationery",
+  "business_type": "stationery shop",
+  "city": "Replace with your city",
+  "hours": "Monday to Saturday, 9 am to 6 pm",
+  "delivery": "200 PKR; free from 3,000 PKR after discount",
+  "payment_methods": "Bank transfer and cash on delivery",
+  "prices": {
+    "notebook": 250,
+    "pen": 50,
+    "backpack": 1500
+  }
+}
