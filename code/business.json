@@ -1,0 +1,17 @@
+{
+  "name": "Talha Stationery",
+  "type": "stationery shop",
+  "city": "Lahore",
+  "hours": "Monday to Saturday, 9 am to 6 pm",
+  "delivery": "200 PKR; free for orders of 3,000 PKR or more; delivery within 2-5 working days",
+  "delivery_fee": 200,
+  "free_delivery_limit": 3000,
+  "delivery_time": "2–5 working days",
+  "payment_methods": "Bank transfer and cash on delivery",
+  "prices": {
+    "notebook": 100,
+    "pen": 50,
+    "backpack": 1500,
+    "art kit": 700
+  }
+}

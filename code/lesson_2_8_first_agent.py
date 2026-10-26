@@ -5,6 +5,15 @@ from langchain_core.messages import HumanMessage, ToolMessage
 from langchain_core.tools import tool
 from pydantic import ValidationError
 
+import logging
+from pathlib import Path
+
+logging.basicConfig(
+    filename=Path(__file__).with_name("assistant_errors.log"),
+    level=logging.ERROR,
+    format="%(asctime)s %(levelname)s %(message)s",
+)
+
 PRICES = {
     "notebook": 250,
     "pen": 50,
@@ -173,7 +182,16 @@ while True:
     messages.append(HumanMessage(content=user_input))
 
     for step in range(MAX_STEPS):
-        response = agent.invoke(messages)
+        try:
+            response = agent.invoke(messages)
+        except Exception:
+            logging.exception("Model request failed")
+            print(
+                "Agent: I can't reach the AI model right now. "
+                "Please check that Ollama is running and try again."
+            )
+            break
+
         messages.append(response)
 
         if not response.tool_calls:
@@ -192,6 +210,11 @@ while True:
                     tool_result = TOOLS[tool_name].invoke(tool_args)
                 except ValidationError as error:
                     tool_result = f"Invalid tool arguments: {error}"
+                except Exception:
+                    logging.exception("Tool %s failed", tool_name)
+                    tool_result = (
+                        "Sorry, I couldn't complete that action due to an error."
+                    )
 
             print(f"  [tool] {tool_name}({tool_args}) -> {tool_result}")
             messages.append(
